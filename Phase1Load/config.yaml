@@ -1,0 +1,7 @@
+database:
+  url:  "your db url supabase"
+  user: "postgres.user"  
+  password: "your password"  
+  name: "postgres"
+  port: 5432
+  table: "table name"
