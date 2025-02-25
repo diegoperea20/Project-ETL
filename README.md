@@ -54,3 +54,12 @@ The first phase involves extracting data from a source, in this case a .csv file
 <p align="center">
   <img src="README-images/001LoadDBSupabaseEvidence.PNG" alt="Step1">
 </p>
+
+> **Note:** if you want use in local the part of load, use 001_loadPhase1cript.py and install requirements.txt in your enviroment.
+> 
+```python
+pip install -r requirements.txt
+```
+
+
+Created by [Diego Ivan Perea Montealegre](https://github.com/diegoperea20)
