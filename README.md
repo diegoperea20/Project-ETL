@@ -61,5 +61,40 @@ The first phase involves extracting data from a source, in this case a .csv file
 pip install -r requirements.txt
 ```
 
+-----
+
+### Phase 2
+
+<p align="justify">
+The second phase performs the transformation and merging of the dataset uploaded to the DB.
+</p>
+
+<p align="center">
+  <img src="README-images/etl project-etl maestria-fase2.png" alt="Step1">
+</p>
+
+The following transformations are performed:
+*  Extract year, month, day, hour, and minute from Date_Time
+*  Convert Location to uppercase
+*  Normalize Temperature_C to Fahrenheit
+*  Normalize Wind_Speed_kmh to mph
+*  Average temperature per location
+
+<p align="center">
+  <img src="README-images/mergeTransformation.png" alt="Step1">
+</p>
+
+
+Result in supabase
+<p align="center">
+  <img src="README-images/transformatiodb1.png" alt="Step1">
+</p>
+<p align="center">
+  <img src="README-images/transformatiodb2.png" alt="Step1">
+</p>
+
+-----
+
+
 
 Created by [Diego Ivan Perea Montealegre](https://github.com/diegoperea20)
