@@ -95,6 +95,52 @@ Result in supabase
 
 -----
 
+### Phase 3
 
+<p align="justify">
+The third phase performs the direct automation of the ETL part, where it is executed with a single command and the data set loaded into the database is displayed in a dashboard.
+</p>
+
+<p align="center">
+  <img src="README-images/etl project-etl maestria.png" alt="Step1">
+</p>
+
+<p align="justify">
+To create the complete automation of the process for all phases of data extraction, transformation, and loading, with Python we create and structure a Python file where, through functions that correspond to each of the phases, it executes automatically in a direct way. This is in the file called "etl.py" which works, clarifying that our db is empty from the beginning, where the output provides evidence of the successful ETL process performed
+</p>
+
+From the folder "Phase3Visualization" and saved Phase3Visualization/config.yaml  and Phase3Visualization/weather_data.csv
+
+```python
+python etl.py
+```
+<p align="center">
+  <img src="README-images/resultadoETL.png" alt="Step1">
+</p>
+
+The following steps are performed when creating a dashboard:
+
+1. First, go to "https://lookerstudio.google.com" and register and log in. After that, create your respective project. To add data from our database such as Supabase which uses PostgreSQL, click on add data and search for PostgreSQL
+<p align="center">
+  <img src="README-images/lookerpostgresql.png" alt="Step1">
+</p>  
+
+2.  After doing this, it requests the DB configuration in the following image. Since Supabase is being used, it should be done as follows: in databases enter "postgres" and for the port enter "5432". Where it asks for the host or IP, enter the URL, and for the username enter the user.
+<p align="center">
+  <img src="README-images/configlookerDB.png" alt="Step1">
+</p>  
+
+3. Once the successful connection with the DB is established, proceed to manipulate the data and create the dashboard with the different parameters and data obtained from the DB
+<p align="center">
+  <img src="README-images/evidencelooker.png" alt="Step1">
+</p> 
+
+
+<p align="center">
+  <img src="README-images/DashboardETLProject.png" alt="Step1">
+</p> 
+
+
+-----
 
 Created by [Diego Ivan Perea Montealegre](https://github.com/diegoperea20)
